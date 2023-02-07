@@ -26,6 +26,7 @@ namespace dotnet_rpg.Controllers
             return Ok(await _characterService.GetAllCharacters());
         }
 
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> GetSingle(int id)
         {

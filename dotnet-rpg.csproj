@@ -21,8 +21,4 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.6" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\HelloWorld" />
-  </ItemGroup>
-
 </Project>

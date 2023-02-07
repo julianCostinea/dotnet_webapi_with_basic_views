@@ -1,0 +1,31 @@
+﻿@model dotnet_rpg.Models.ServiceResponse<dotnet_rpg.Dtos.Character.GetCharacterDto>;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    @if(Model.Data != null)
+    {
+        <h3>
+            @Html.DisplayNameFor(model => model.Data.Name)
+        </h3>
+        <p>@Html.DisplayFor(model => model.Data.Name)</p>
+        <h3>
+            @Html.DisplayNameFor(model => model.Data.Class)
+        </h3>
+        <p>@Html.DisplayFor(model => model.Data.Class)</p>
+    }
+    else
+    {
+        <h3>
+            @Html.DisplayNameFor(model => model.Message)
+        </h3>
+        <p>@Html.DisplayFor(model => model.Message)</p>
+    }
+</div>
+</body>
+</html>
